@@ -55,6 +55,7 @@ body{
     letter-spacing: 2;
     font-weight: 300;
     font-family: 'alata', sans-serif;
+    /* font-size: 70%; */
 }
 .two{
     height: 100vh;
@@ -156,11 +157,11 @@ body{
     /* width: 200px; */
     height: 100%;
 }
-footer{
+/* footer{
     display: flex;
     justify-content: space-between;
     background-color: hsl(0, 0%, 0%);
-    padding: 30px 140px 40px 140px;
+    padding: 30px 140px 40px 140px; */
 
 }
 .footer-img{
@@ -200,6 +201,106 @@ footer{
     color: hsl(0, 0%, 55%);
 
 }
+.foot-grid{
+    display: flex;
+    justify-content: space-between;
+    background-color: black;
+    color: white;
+    padding: 30px 120px;
+    align-items: center;
+}
+.foot-grid-one img{
+    padding-bottom: 30px;
+}
+.foot-grid-one ul{
+    display: flex;
+}
+.foot-grid-one ul li{
+    list-style: none;
+}
+.foot-grid-one ul li a{
+    text-decoration: none;
+    padding-right: 30px;
+    color: white;
+
+}
+.socials img{
+    padding-bottom: 30px;
+    margin-left: 10px;
+}
+.new{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    /* color: white; */
+    gap: 20px;
+    padding: 40px 140px;
+}
+.new p{
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    padding-top: auto;
+    /* margin-top: auto; */
+}
+.on{
+    background-image: url(./images/desktop/image-deep-earth.jpg);width: 100%;
+    height: 450px;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    /* background-size: auto auto; */
+}
+.tw{
+    background-image: url(./images/desktop/image-night-arcade.jpg);
+    width: 100%;
+    height: 450px;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.thr{
+    background-image: url(./images/desktop/image-soccer-team.jpg);
+    width: 100%;
+    height: 450px;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.fou{
+    background-image: url(./images/desktop/image-grid.jpg);
+    width: 100%;
+    height: 450px;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.fiv{
+    background-image: url(./images/desktop/image-from-above.jpg);
+    width: 100%;
+    height: 450px;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.six{
+    background-image: url(./images/desktop/image-pocket-borealis.jpg);
+    width: 100%;
+    height: 450px;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.sev{
+    background-image: url(./images/desktop/image-curiosity.jpg);
+    width: 100%;
+    height: 450px;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.eig{
+    background-image: url(./images/desktop/image-fisheye.jpg);
+    width: 100%;
+    height: 450px;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
 @media (max-width: 760px) {
     body{
         width: 100%;
@@ -228,7 +329,7 @@ footer{
     margin:0 30px;
     /* margin-right: 40px; */
     margin-top: 40%;
-    padding: 0;
+    padding: 20px;
    
 }
 .two-grid{
@@ -276,6 +377,8 @@ grid-template-rows: repeat(2, 1fr);
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: repeat(2, fr);
+    padding: 0;
+    justify-content: center;
     
 }
 .three h1{
@@ -300,5 +403,121 @@ grid-template-rows: repeat(2, 1fr);
 .three-grid img{
     width: 100%;
     height: 70%;
+}
+.foot-list{
+    /* display: flex; */
+    /* flex-direction: row; */
+    /* grid-template-columns: 1fr;
+    grid-template-rows: 6, 1fr; */
+}
+.foot-grid{
+    display: block;
+    text-align: center;
+    width: 100%;
+    padding: 20px 30px;
+}
+.foot-grid ul{
+    display: block;
+}
+.socials{
+    
+}
+.about-mob{
+    display: flex;
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 20px;
+
+    /* flex-direction: row; */
+}
+.about-mob ul li{
+    padding-bottom: 30px;
+}
+.about-mob ul li a{
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 20px;
+    font-size: 16px;
+
+}
+.foot-soc h6{
+    font-size: 15px;
+}
+
+.new{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    /* color: white; */
+    gap: 40px;
+    padding: 10px 40px;
+}
+.new p{
+    display: flex;
+    text-align: center;
+}
+.on{
+    background-image: url(./images/mobile/image-deep-earth.jpg);width: 100%;
+    height: 200px;
+    background-size: auto;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    /* background-size: auto auto; */
+}
+.tw{
+    background-image: url(./images/mobile/image-night-arcade.jpg);
+    width: 100%;
+    height: 200px;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.thr{
+    background-image: url(./images/mobile/image-soccer-team.jpg);
+    width: 100%;
+    height: 200px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+}
+.fou{
+    background-image: url(./images/mobile/image-grid.jpg);
+    width: 100%;
+    height: 200px;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.fiv{
+    background-image: url(./images/mobile/image-from-above.jpg);
+    width: 100%;
+    height: 200px;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.six{
+    background-image: url(./images/mobile/image-pocket-borealis.jpg);
+    width: 100%;
+    height: 200px;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.sev{
+    background-image: url(./images/mobile/image-curiosity.jpg);
+    width: 100%;
+    height: 200px;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.eig{
+    background-image: url(./images/mobile/image-fisheye.jpg);
+    width: 100%;
+    height: 200px;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 }
